@@ -1,19 +1,19 @@
 According to the open-closed principle, software entities should be **open for extension but closed for modification**. The essential concept behind this approach is that we should be able to add new functionality without requiring changes to the existing code:
 
     class  Triangle {
-			public  base: number;
-			public  height: number;
-			constructor(base: number, height: number) {
-			this.base = base;
-			this.height = height;
+	public  base: number;
+	public  height: number;
+	constructor(base: number, height: number) {
+		this.base = base;
+		this.height = height;
 		}
 	}
-	class  Rectangle {
+    class  Rectangle {
 		public  width: number;
 		public  height: number;
 		constructor(width: number, height: number) {
-		this.width = width;
-		this.height = height;
+			this.width = width;
+			this.height = height;
 		}
 	}
 Let’s imagine that we want to develop a function that calculates the area of a collection of shapes.With our current design, it might appear something like the following:
